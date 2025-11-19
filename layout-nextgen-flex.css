@@ -68,7 +68,7 @@ img {
 }
 
 @media (max-width: 768px) {
-    .div_diferenciais, .cabecalho_ul {
+    .div_diferenciais, .cabecalho {
         flex-direction: column;
     }
 }
@@ -101,6 +101,10 @@ img {
 .div_contatos a {
     text-decoration: none;
     color: rgb(194, 252, 255);
+}
+
+.h2_contatos {
+    padding-bottom: 5px;
 }
 
 .rodape {
