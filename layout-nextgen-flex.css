@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -30,6 +32,7 @@ body::after {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
     padding: 3% 30%;
 }
 
@@ -43,12 +46,20 @@ body::after {
     display: flex;
     list-style: none;
     gap: 1.25rem;
+    
 }
 
 .cabecalho_ul a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 5px rgb(0, 26, 255);
+}
+
+.cabecalho_ul a:hover {
+    text-decoration: underline;
+    transition: 0.5s;
+    text-shadow: 0px 0px 10px white;
+    text-transform: translate(4px);
 }
 
 img {
@@ -63,13 +74,44 @@ img {
 
 }
 
+.p_inicio {
+    padding-top: 1.25rem;
+}
+
 .h1_inicio, .p_inicio, .titulo_principal_diferenciais, .titulo_diferenciais1, .titulo_diferenciais2, .titulo_diferenciais3, .contatos {
     padding-bottom: 1.25rem;
+}
+
+.botao {
+    font-size: 1rem;
+    padding: 3px 20px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px white;
+    transition: 0.5s;
+}
+
+.botao:hover {
+    box-shadow: 0px 0px 20px rgb(255, 255, 255);
+    transform: translateY(4px);
+}
+
+.botao a {
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    text-decoration: none;
 }
 
 @media (max-width: 768px) {
     .div_diferenciais, .cabecalho {
         flex-direction: column;
+        text-align: center;
+    }
+
+    .cabecalho_ul {
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }
 
@@ -96,6 +138,7 @@ img {
     border: 3px solid cyan;
     border-radius: 10px;
     box-shadow: 0 0 20px rgb(204, 0, 255);
+    word-wrap: break-word;
 }
 
 .div_contatos a {
@@ -112,3 +155,4 @@ img {
     color: aliceblue;
     padding: 1rem;
 }
+
