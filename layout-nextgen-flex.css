@@ -16,10 +16,6 @@ body {
     min-height: 100vh;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-}
 
 body::after {
     content: '';
@@ -76,7 +72,6 @@ img {
 .conteudo_principal {
     text-align: center;
     color: aliceblue;
-    flex: 1;
 }
 
 .p_inicio {
@@ -160,6 +155,7 @@ img {
     color: aliceblue;
     padding: 1rem;
 }
+
 
 
 
